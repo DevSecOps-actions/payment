@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 jobs:
   catalogue:
-    uses: DevSecOps-actions/reusable-workflows/.github/workflows/payment.yaml@main
+    uses: DevSecOps-actions/reusable-workflows/.github/workflows/python.yaml@main
     with: 
       Project: Roboshop
       Application: payment
