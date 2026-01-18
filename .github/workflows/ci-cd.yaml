@@ -1,0 +1,14 @@
+name: payment
+on: 
+  push:
+  workflow_dispatch:
+jobs:
+  catalogue:
+    uses: DevSecOps-actions/reusable-workflows/.github/workflows/java.yaml@main
+    with: 
+      Project: Roboshop
+      Application: payment
+      app_type: python
+    secrets: 
+      aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
